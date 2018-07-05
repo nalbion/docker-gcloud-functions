@@ -3,5 +3,6 @@ services:
   - docker
 
 script:
- - make default push
+ - make default
+ #- make default push
 
