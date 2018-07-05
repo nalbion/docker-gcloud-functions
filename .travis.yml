@@ -3,5 +3,5 @@ services:
   - docker
 
 script:
- - make default deploy
+ - make default push
 
