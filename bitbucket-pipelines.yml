@@ -1,0 +1,12 @@
+pipelines:
+  default:
+    - step:
+        script:
+          - docker login -u $DOCKER_HUB_USER -p $DOCKER_HUB_PASSWORD
+          - make
+	  - make deploy
+        services:
+          - docker
+        caches:
+          - docker
+
