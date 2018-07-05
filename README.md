@@ -1,3 +1,6 @@
+
+[![Build Status](https://travis-ci.com/nalbion/docker-gcloud-functions.svg?branch=master)](https://travis-ci.com/nalbion/docker-gcloud-functions)
+
 # docker-gcloud-functions
 Docker image for building &amp; deploying google cloud functions
 
