@@ -16,5 +16,7 @@ RUN apt-get -y update && apt-get upgrade -qy && apt-get install -qy \
 	&& apt-get clean && \
 	gcloud config set core/disable_usage_reporting true && \
 	gcloud config set component_manager/disable_update_check true && \
-	gcloud config set metrics/environment github_docker_image
-
+	gcloud config set metrics/environment github_docker_image && \
+	curl -q https://dl.google.com/gactions/updates/bin/linux/amd64/gactions/gactions \
+    	-o /usr/local/bin/gactions && \
+    	chmod 755 /usr/local/bin/gactions
