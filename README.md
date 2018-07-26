@@ -4,7 +4,7 @@
 # docker-gcloud-functions
 Docker image for building &amp; deploying google cloud functions
 
-- [Node 6.14.0](https://cloud.google.com/functions/docs/writing/)
+- [Node 8.11.1](https://cloud.google.com/functions/docs/concepts/nodejs-8-runtime)
 - npm, [pnpm](https://pnpm.js.org), [yarn](https://yarnpkg.com/en/)
 - [python 2.7](https://docs.python.org/2/)
 - [gcloud](https://cloud.google.com/sdk/gcloud/reference/beta/functions/)
