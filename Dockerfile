@@ -1,4 +1,4 @@
-FROM node:6.14.0
+FROM node:8.11.1
 
 ENV CLOUD_SDK_VERSION 207.0.0
 
