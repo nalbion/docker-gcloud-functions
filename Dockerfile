@@ -1,6 +1,6 @@
 FROM node:8.11.1
 
-ENV CLOUD_SDK_VERSION 207.0.0
+ENV CLOUD_SDK_VERSION 211.0.0
 
 RUN apt-get -y update && apt-get upgrade -qy && apt-get install -qy \
 		apt-transport-https \
