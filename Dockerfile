@@ -1,6 +1,6 @@
-FROM node:8.11.1
+FROM node:10.15.3
 
-ENV CLOUD_SDK_VERSION 211.0.0
+ENV CLOUD_SDK_VERSION 244.0.0
 
 RUN printf "deb http://archive.debian.org/debian/ jessie main\ndeb-src http://archive.debian.org/debian/ jessie main\ndeb http://security.debian.org jessie/updates main\ndeb-src http://security.debian.org jessie/updates main" > /etc/apt/sources.list
 RUN apt-get -y update && apt-get upgrade -qy && apt-get install -qy \
