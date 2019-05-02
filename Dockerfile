@@ -2,6 +2,7 @@ FROM node:8.11.1
 
 ENV CLOUD_SDK_VERSION 211.0.0
 
+RUN printf "deb http://archive.debian.org/debian/ jessie main\ndeb-src http://archive.debian.org/debian/ jessie main\ndeb http://security.debian.org jessie/updates main\ndeb-src http://security.debian.org jessie/updates main" > /etc/apt/sources.list
 RUN apt-get -y update && apt-get upgrade -qy && apt-get install -qy \
 		apt-transport-https \
 		python2.7 \
