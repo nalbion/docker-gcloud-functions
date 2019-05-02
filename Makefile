@@ -3,5 +3,4 @@ default:
 
 push:
 	@docker login -u $(DOCKER_HUB_USER) -p $(DOCKER_HUB_PASSWORD)
-	@docker push nalbion/gcloud-functions:latest
-
+	@docker push nalbion/gcloud-functions:8.11.1
