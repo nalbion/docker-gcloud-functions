@@ -3,9 +3,8 @@ pipelines:
     - step:
         script:
           - make
-	  - make deploy
+          - make deploy
         services:
           - docker
         caches:
           - docker
-
