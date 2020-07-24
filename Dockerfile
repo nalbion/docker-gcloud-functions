@@ -7,7 +7,7 @@ RUN apt-get -y update && apt-get upgrade -qy && apt-get install -qy \
 		apt-transport-https \
 		python2.7 \
 	&& npm install -g \
-		shorthash node-gyp yarn pnpm typescript tslint \
+		shorthash node-gyp yarn pnpm typescript eslint \
 	&& export CLOUD_SDK_REPO="cloud-sdk" && \
 	echo "deb https://packages.cloud.google.com/apt $CLOUD_SDK_REPO main" > /etc/apt/sources.list.d/google-cloud-sdk.list && \
 	curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add - && \
